@@ -1,0 +1,15 @@
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header-menu > a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
