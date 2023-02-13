@@ -171,6 +171,11 @@ address{
 .hero-social_link {
     width: 100px;
     padding-left: 0;
+    
+
+    color: #303030;
+    
+    
 }
 
 .hero-link{
@@ -715,22 +720,18 @@ color: var(--second-title-color) ;
 
 .booking-contacts_box{
     display: flex;
-    /* width: (100%); */
+
     justify-content: center;
 
 }
 
-.bokking-contacts_box > section{
-    width: ;
-}
-
-
 .bokking-contacts{
+    
     display: inline-flex;
 }
+
 .booking {
-    /* width: 785px;
-    height: 634px; */
+
     display: block;
     min-width: calc(1200px/2);
 
@@ -750,6 +751,7 @@ color: var(--second-title-color) ;
 .contacts{
 
     min-width: calc(1200px/2);
+    padding-left: 100px;
 }
 
 .contacts-title {
@@ -816,6 +818,7 @@ color: var(--second-title-color) ;
     color: var(--main-title-color);
 }
 .contacts-subtimework {
+    margin-bottom: 120px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -832,8 +835,9 @@ color: var(--second-title-color) ;
 /* ----------------------FOOTER------------------------------- */
 
 .footer {
-    margin-top: 56px;
-    margin-bottom: 56px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    background: #F7F7F7;
 }
 
 
