@@ -44,7 +44,7 @@
 
             <div class="header-contacts">
                 <a class="header-contacts_tel" href="tel:+380441111111">+38 044 111 11 11</a>
-                <button class="button header-contacts_btn" type="button">Online-booking</button>
+                <button class="button header-contacts_btn" type="button" data-modal-open>Online-booking</button>
             </div>
        </div>
     </header>
@@ -53,10 +53,16 @@
         <section class="hero">
             <div class="container hero-container">
 
+                <div class="hero-soc">
                     <ul class="hero-social_link">
                         <li class="hero-link"><a href="" target ="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
                         <li class="hero-link"><a href="" target ="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
                     </ul>
+                </div>
+
+
+
+
     
                     <div class="hero-slider">
                         <p class="hero-pre-title">
@@ -152,7 +158,7 @@
                 </div>
     
     
-                <button class="prices-btn" type="button">ONLINE-BOOKING</button>
+                <button class="prices-btn" type="button"  data-modal-open>ONLINE-BOOKING</button>
             </div>
 
         </section>
@@ -166,7 +172,7 @@
                         <p class="benefits-item-text">Satisfied customers per day</p>
                     </li>
                     <li class="benefits-item">
-                        <span>50 </span>
+                        <span>50</span>
                         <p class="benefits-item-text">Awards for excellent service</p>
                     </li>
                     <li class="benefits-item">
@@ -208,7 +214,12 @@
                 <h2 class="barbers-title">Our barbers</h2>
                 <ul class="barber-list">
                     <li class="barber-item">
-                        <img class="barber-item-img" src="./images/barber_john_smith_desktop_2x.jpg" alt="barber john_smith" width="370">
+                        <div class="barber-box-text">
+                            <img class="barber-item-img" src="./images/barber_john_smith_desktop_2x.jpg" alt="barber john_smith" width="370">
+                            <p class="barber-top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum in magnam eum, perferendis corrupti? Tenetur culpa placeat accusantium pariatur, ducimus inventore expedita odio sapiente, asperiores voluptate totam velit. Doloribus?
+                            </p>
+                        </div>
+
                         <div class="barber-wrap">
                             <h3 class="barber-item-name">John Smith</h3>
                             <p class="barber-item-text">Extreme Barber</p>
@@ -238,8 +249,12 @@
                         </div>
                     </li>
                     <li class="barber-item">
-                        <img class="barber-item-img" src="./images/barber_michele_doe_desktop_2x.jpg" alt="barber michele_doe" width="370">
-
+                        <div class="barber-box-text">
+                            <img class="barber-item-img" src="./images/barber_michele_doe_desktop_2x.jpg" alt="barber michele_doe" width="370">
+                            <p class="barber-top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum in magnam eum, perferendis corrupti? Tenetur culpa placeat accusantium pariatur, ducimus inventore expedita odio sapiente, asperiores voluptate totam velit. Doloribus?
+                            </p>
+                        </div>
+                        
                         <div class="barber-wrap">
                             <h3 class="barber-item-name">Michele Doe</h3>
                             <p class="barber-item-text">Extreme Barber</p>
@@ -269,8 +284,12 @@
                         </div>
                     </li>
                     <li class="barber-item">
-                        <img class="barber-item-img" src="./images/barber_alan_black_desktop_2x.jpg" alt="barber alan_black_" width="370">
-
+                        <div class="barber-box-text">
+                            <img class="barber-item-img" src="./images/barber_alan_black_desktop_2x.jpg" alt="barber alan_black_" width="370">
+                            <p class="barber-top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum in magnam eum, perferendis corrupti? Tenetur culpa placeat accusantium pariatur, ducimus inventore expedita odio sapiente, asperiores voluptate totam velit. Doloribus?
+                            </p>
+                        </div>
+                        
                         <div class="barber-wrap">
                             <h3 class="barber-item-name">Alan Black</h3>
                             <p class="barber-item-text">Extreme Barber</p>
@@ -331,7 +350,7 @@
         <div class="contact-wrap">
             <div class="container booking-contacts_box">
                 <!-- BOOKING -->
-                <section class="booking">
+                <section class="booking" id="booking">
                     <h2 class="booking-title">Online-booking</h2>
                     <button class="booking-btn" type="submit">send</button>
                 </section>
@@ -339,10 +358,28 @@
                 <section class="contacts" id="contacts">
                     <h2 class="contacts-title">Contacts</h2>
                     <address class="contacts-adr">
-                        <a class="contacts-map-link" href="https://goo.gl/maps/aJxGrmhmNGnMzEM77" target="_blank" rel="noopener noreferrer nofollow">st. Vasilkivska, 7A</br> Kyiv, 08132</a>
+                        <span class="contacts-pre-span">                                 
+                            <svg class="contacts-map-svg">
+                            <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
+                            </svg>
+                            </span>
+                        <a class="contacts-map-link" href="https://goo.gl/maps/aJxGrmhmNGnMzEM77" target="_blank" rel="noopener noreferrer nofollow"> st. Vasilkivska, 7A</br> Kyiv, 08132</a>
                         <ul class="contacts-list">
-                            <li class="contacts-item"><a class="contacts-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
-                            <li class="contacts-item"><a class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+                            
+                            <li class="contacts-item">
+                                    <span class="contacts-pre-span">                                 
+                                        <svg class="contacts-map-svg">
+                                        <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
+                                        </svg>
+                                    </span>
+                                    <a class="contacts-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+                            <li class="contacts-item">
+                                <span class="contacts-pre-span">                                 
+                                    <svg class="contacts-map-svg">
+                                    <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
+                                    </svg>
+                                    </span>
+                                    <a class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
                         </ul>
                     </address>
                     <p class="contacts-subtitle">
@@ -377,5 +414,25 @@
         </div>
 
     </footer>
+
+<!--------------------------- МОДАЛЬНЕ ВІКНО------------------------------------>
+
+<div class="backdrop" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn"  data-modal-close>
+            <svg class="modal-close-icon">
+                <use href="./images/svg/svg_icon.svg#cancel-circle" width="30px" height="30px"></use>
+            </svg>
+        </button>
+        
+    </div>
+</div>
+
+
+
+
+
+
+<script src="./js/modal.js" type="module"></script>
 </body>
 </html>
