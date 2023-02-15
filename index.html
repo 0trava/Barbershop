@@ -357,26 +357,29 @@
                 <!-- Contacts -->
                 <section class="contacts" id="contacts">
                     <h2 class="contacts-title">Contacts</h2>
+                    
                     <address class="contacts-adr">
-                        <span class="contacts-pre-span">                                 
-                            <svg class="contacts-map-svg">
-                            <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
-                            </svg>
-                            </span>
-                        <a class="contacts-map-link" href="https://goo.gl/maps/aJxGrmhmNGnMzEM77" target="_blank" rel="noopener noreferrer nofollow"> st. Vasilkivska, 7A</br> Kyiv, 08132</a>
+                        <div class="contacts-adr-map">
+                            <span class="contacts-pre-span">                                 
+                                <svg class="contacts-svg map-svg">
+                                <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
+                                </svg>
+                                </span>
+                            <a class="contacts-map-link" href="https://goo.gl/maps/aJxGrmhmNGnMzEM77" target="_blank" rel="noopener noreferrer nofollow"> st. Vasilkivska, 7A</br> Kyiv, 08132</a>
+                        </div>
                         <ul class="contacts-list">
                             
                             <li class="contacts-item">
                                     <span class="contacts-pre-span">                                 
                                         <svg class="contacts-map-svg">
-                                        <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
+                                        <use href="./images/svg/svg_icon.svg#phone" width="24px" hight="24px"></use>
                                         </svg>
                                     </span>
                                     <a class="contacts-link" href="tel:+380441111111">+38 044 111 11 11</a></li>
                             <li class="contacts-item">
                                 <span class="contacts-pre-span">                                 
                                     <svg class="contacts-map-svg">
-                                    <use href="./images/svg/svg_icon.svg#map-pin" width="24px" hight="24px"></use>
+                                    <use href="./images/svg/svg_icon.svg#mail" width="24px" hight="24px"></use>
                                     </svg>
                                     </span>
                                     <a class="contacts-link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
@@ -394,6 +397,9 @@
             </div>
         </div>
     </main>
+
+
+
 <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -424,6 +430,76 @@
                 <use href="./images/svg/svg_icon.svg#cancel-circle" width="30px" height="30px"></use>
             </svg>
         </button>
+
+        
+        <form class="form">
+            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <!-- імя -->
+            <div class="form-field" >                    
+                    <label for="name">Ім'я</label>
+                    
+                    <div class="form-icon" >
+                        <input type="text" width="448px" name="user-nsme" id="name" autofocus >    
+                        <svg width = "12px" height="12px">
+                            <use href="./images/svg/svg_icon.svg#icon-person"></use>
+                        </svg>
+                    </div>
+            </div>
+            <!-- Телефон -->
+            <div class="form-field">
+                <label for="tel">Телефон</label>
+             
+
+                <div class="form-icon" >
+                    <input type="text" name="tel" id="tel">    
+                    <svg width = "13px" height="13px">
+                        <use href="./images/svg/svg_icon.svg#phone"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Пошта -->
+            <div class="form-email  form-field">
+                <label for="email">Пошта</label>
+
+                <div class="form-icon" >
+                    <input type="email" name="email" id="email">    
+                    <svg width = "15px" height="12px">
+                        <use href="./images/svg/svg_icon.svg#email"></use>
+                    </svg>
+                </div>
+                
+            </div>
+
+            <!-- Коментар -->
+            <div class="form-comment">
+                <label for="comment">Коментар</label>
+                <textarea class="comment" name="comment" id="comment"  placeholder="Введіть текст"></textarea>
+            </div>
+
+            <!-- Погоджуюсь з розсилкою -->
+            <div class="form-checkbox">
+                <label class="label" for="agree">
+                <input class="checkbox" type="checkbox" name="agree" value="" id="agree">
+                
+                <div class="icon-span">
+                    <span class=""></span>
+                    <svg  class="icons-checkbox" width = "11px" height="8px">
+                        <use href="./images/svg/svg_icon.svg#check"></use>
+                    </svg>
+                </div>
+                Погоджуюся з розсилкою та приймаю&ensp;
+                <span><a href=""> Умови договору</a></span>
+                </label> 
+            </div>
+
+            <!-- Кнопка відправити -->
+
+            <div class="form-button">
+                <button type="submit" class="button-form">Відправити</button>
+            </div>
+        </form>  
+
         
     </div>
 </div>
