@@ -124,6 +124,7 @@ address{
     margin-left: 43px;
     border: 1px solid var(--btn-acent-color);
     background: none;
+    cursor: pointer;
 
     border-radius: 25px;
     Width: 160px;
@@ -1111,7 +1112,7 @@ address{
     padding: 0;
 }
 
-.backdrop.is-hidden{
+.is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
