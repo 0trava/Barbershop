@@ -352,7 +352,13 @@
                 <!-- BOOKING -->
                 <section class="booking" id="booking">
                     <h2 class="booking-title">Online-booking</h2>
-                    <button class="booking-btn" type="submit">send</button>
+                    <form aclass="online-form">
+                        <input type="text" placeholder="Name*" class="online-input online-item tm2" name="online-name"/>
+                        <input type="tel" placeholder="Phone*" class="online-input online-item" name="online-tel"/>
+                    
+                        <textarea name="online-text" class="online-textarea online-item" placeholder="Message"></textarea>
+                        <button class="booking-btn online-btn" type="submit">send</button>
+                    </form>
                 </section>
                 <!-- Contacts -->
                 <section class="contacts" id="contacts">
@@ -439,7 +445,7 @@
                     <label for="name">Ім'я</label>
                     
                     <div class="form-icon" >
-                        <input type="text" width="448px" name="user-nsme" id="name" autofocus >    
+                        <input class="input"  type="text" width="448px" name="user-nsme" id="name" autofocus >    
                         <svg width = "12px" height="12px">
                             <use href="./images/svg/svg_icon.svg#icon-person"></use>
                         </svg>
@@ -451,7 +457,7 @@
              
 
                 <div class="form-icon" >
-                    <input type="text" name="tel" id="tel">    
+                    <input class="input"  type="text" name="tel" id="tel">    
                     <svg width = "13px" height="13px">
                         <use href="./images/svg/svg_icon.svg#phone"></use>
                     </svg>
@@ -463,7 +469,7 @@
                 <label for="email">Пошта</label>
 
                 <div class="form-icon" >
-                    <input type="email" name="email" id="email">    
+                    <input class="input" type="email" name="email" id="email">    
                     <svg width = "15px" height="12px">
                         <use href="./images/svg/svg_icon.svg#email"></use>
                     </svg>
