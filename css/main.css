@@ -179,6 +179,7 @@ address {
   border: 1px solid var(--btn-acent-color);
 }
 
+/* ----------------------HEADER MOBILE MENU------------------------------- */
 .header-menu-btn {
   background: transparent;
   background-color: transparent;
@@ -192,16 +193,77 @@ address {
   }
 }
 
+.mob-menu {
+  background-color: white;
+  width: 70vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.mob-menu-item > a, .mob-menu-contacts > a {
+  font-family: "Open Sans";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+
+.mob-menu-list {
+  margin-top: 118px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.mob-menu-contacts {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.mob-menu-button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  margin: 0;
+  margin-bottom: 76px;
+}
+
+.header-menu-btn-close {
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  display: flex;
+  background: transparent;
+  background-color: transparent;
+}
+
+.modal-close-icon {
+  fill: black;
+}
+
 /* ----------------------HERO------------------------------- */
 .hero-container {
-  display: flex;
-  padding: 0;
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    padding-left: 15px;
-    padding-right: 15px;
     max-width: 720px;
   }
 }
