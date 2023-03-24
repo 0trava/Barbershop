@@ -1,0 +1,77 @@
+/* ------------------- МОДАЛЬНЕ ВІКНО------------------ */
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 247, 247, 0.5);
+    position: fixed;
+    top: 0;
+
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal{
+    min-height: 581px;
+    width: 528px;
+    background-color: #F7F7F7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%) scaleY(1);
+    border-radius: 10px;
+    border: 1px solid #141414;
+
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-close-btn{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    /* fill:#303030 ; */
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    cursor: pointer;
+    padding: 0;
+    border: none;
+
+    
+}
+
+.modal-close-btn:hover svg, .modal-close-btn:focus svg{
+ fill: #FF6C00;
+}
+
+.modal-close-icon{
+ height: 30px;
+ width: 30px;
+ margin: 0;
+ padding: 0;
+ fill: #555555;
+
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-icon use{
+    height: 30px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scaleY(0);
+}

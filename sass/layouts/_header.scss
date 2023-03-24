@@ -1,0 +1,115 @@
+/* ----------------------HEADER------------------------------- */
+.header{
+    /* background-color: gray; */
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    position: absolute;
+    width: 100%;
+
+    /* top: 0;
+    right: 12%; */
+    
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    // margin-right: 131px;
+    fill: white;
+
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu > a, .header-contacts_tel {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    color: var(--main-title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-box-menu{
+
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.header-contacts{
+    padding-right: 17px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.header-menu > a:hover, .header-menu > a:focus,
+.header-contacts_tel:focus, .header-contacts_tel:hover{
+    color: var(--btn-acent-color);
+    cursor: pointer;
+    /* border: 1px solid #000000; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-contacts_btn, .prices-btn, .booking-btn{
+    margin-left: 43px;
+    border: 1px solid var(--btn-acent-color);
+    background: none;
+    cursor: pointer;
+
+    border-radius: 25px;
+    Width: 160px;
+    Height: 40px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--main-title-color);
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts_btn:hover, .header-contacts_btn:focus,
+.prices-btn:hover, .prices-btn:focus,
+.booking-btn:hover, .booking-btn:focus{
+    background: var(--btn-acent-color);
+    border: 1px solid var(--btn-acent-color);
+}
+
+
+.header-menu-btn{
+    background: transparent;
+    background-color: transparent;
+    border: medium none;
+    width: 40px;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+}

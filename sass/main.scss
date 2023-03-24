@@ -1,0 +1,21 @@
+// Basic styles
+@import './utils/vars';
+@import './base/reset';
+@import './components/container';
+@import './components/common';
+
+// Page Purt
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/prices';
+@import './layouts/benefits';
+@import './layouts/barbers';
+@import './layouts/our-work';
+@import './layouts/booking';
+@import './layouts/footer';
+
+
+// Components
+@import './components/modal-window';
+@import './components/modal-window-forma';

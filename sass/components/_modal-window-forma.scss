@@ -1,0 +1,238 @@
+/* --------Форма: Залиште свої дані ------------*/
+
+.form{
+    width: 448px;
+    margin: 40px;
+  }
+  
+  .form-field, .form-comment{
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+  
+  
+    letter-spacing: 0.01em;
+    color: var(--title-text-color);
+  }
+  
+  .form-field input{
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  
+  
+  
+  .comment{
+  
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+   
+    resize: none; 
+    width: 448px;
+      height: 120px;
+  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  
+  
+  
+  .comment::placeholder{
+    color: var(--text-form-placeholder);
+  }
+  
+  .form-field label,   .form-comment label{
+    margin-bottom: 4px;
+  }
+  
+  .form-checkbox{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  
+    color: var(--title-text-color);
+  }
+  
+  .form-field input::placeholder{
+  
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  
+    color: var(--text-form-placeholder);
+  }
+  
+  .form-title{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  .form-comment{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-checkbox a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  
+    letter-spacing: 0.03em;
+    color: var(--form-second-color);
+    border-bottom: 1px solid var(--form-second-color);
+  
+  }
+  
+  .form-field:focus input, .form-field:hover input,
+   .form-field:active input, .form-field:hover svg,
+   .form-comment:focus textarea, .form-comment:hover textarea  {
+    border-color: var(--form-second-color);
+    fill:var(--accent-color); 
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .button-form{
+    
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+  
+    text-align: center;
+  
+    letter-spacing: 0.06em;
+  
+    color: var(--second-text-color);
+    background: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  
+  }
+  
+  .button-form:focus, .button-form:hover{
+    background: #FF6C00;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  
+  .form-icon {
+    position: relative;
+    flex-direction: column;
+  }
+  
+  .form-icon input{
+    width: 448px;
+  }
+  
+  .form-icon svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate( 0%, -50%);
+  
+    margin-left: 15px;
+    box-sizing: border-box;
+  
+  }
+  
+  .input:focus-visible, .comment:focus-visible {
+    outline: 1px solid var(--accent-color);
+    border-radius: 3px;
+  }
+  
+  .form-subscription:focus-visible{
+    color: var(--footer-text-color);
+  }
+  
+  /* ховаемо чекбокс */
+  
+  .checkbox{
+    appearance: none;
+    
+  }
+  
+  .form-checkbox > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-span{
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    width: 16px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    ;
+    border-radius: 4px;
+    margin-right: 7px;
+    margin-left: 12px;
+  }
+  
+  
+  .icons-checkbox{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  
+    background-origin: border-box;
+    z-index: 0; 
+  }
+  
+  
+  
+  .checkbox:checked + .icon-span{
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    background-origin: border-box;
+    z-index: 1;
+  
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    z-index 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }

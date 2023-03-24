@@ -742,6 +742,7 @@ address{
 
 .barbers-soc-icon:hover, .barbers-soc-icon:focus{
     fill: #FF6C00;
+    transform: scale(1.1);
 }
 
 .barbers-soc-icon{
@@ -749,6 +750,8 @@ address{
     height: 20px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .barbers-soc--link {
     width: 100%;
@@ -848,6 +851,12 @@ address{
 
 .work-item{
     width: ((100%-30px)/4);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.work-item:hover, .work-item:focus{
+    transform: scale(1.1);
 }
 
 
@@ -1155,7 +1164,8 @@ address{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 30px;
+    padding-right: 30px;
+
     
 }
 
@@ -1174,10 +1184,10 @@ address{
 
 }
 
-.tm2{
+/* .tm2{
     margin-right: 30px;
 
-}
+} */
 
 .online-item:hover, .online-item:focus{
     border-color: #F7F7F7;
@@ -1203,19 +1213,32 @@ address{
   
 }
 
-.online-item:, .online-item:focus-within, .online-item:focus-visible  {
+.online-item:focus::placeholder, .online-item:hover::placeholder  {
     color: #F7F7F7;
+
 }
 
+.online-item { 
+    font-weight: 600px;
+    font-size: 14px;
+    line-height: 1.36;
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+    color: #F7F7F7;
+  }
 
-.online-textarea{
+
+.online-textarea {
     margin-top: 44px;
     margin-bottom: 44px;
+
     
 
     outline: transparent;
     background-color: transparent;
+    resize: none;
     width: 100%;
+
     height: 75px;
 
     border: none;
@@ -1224,9 +1247,15 @@ address{
 
 
 .booking-btn {
+
 }
 .online-btn {
+    margin-left: 0;
+
 }
+
+
+
 /* --------Форма: Залиште свої дані ------------*/
 
 .form{
@@ -1463,5 +1492,5 @@ address{
   
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    z-index 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }

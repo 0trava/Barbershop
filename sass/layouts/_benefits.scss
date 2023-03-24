@@ -1,0 +1,150 @@
+/* ----------------------BENEFITS------------------------------- */
+
+
+.benefits-box{
+    display: flex;
+    flex-flow: wrap;
+
+
+    @media screen and (min-width: 768px) {
+        justify-content: right;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: start;
+        flex-flow: nowrap;
+
+    }
+
+}
+
+.benefits-list{
+    display: flex;
+    width: 569px;
+    flex-wrap: wrap;
+    margin: 0;
+    order: 1;
+    margin-top: 44px;
+    padding: 0;
+
+
+    @media screen and (min-width: 1200px) {
+        order: 0;
+        margin-top: 0;
+    }
+
+}
+
+
+
+.benefits-item {
+    width: 193px;
+    height: 133px;
+    background: #F7F7F7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+    margin: 0;
+
+
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+}
+
+.benefits-item:nth-child(odd){
+    margin-right: 30px;
+
+}
+
+.benefits-item:nth-child(even){
+    margin-top: 30px;
+    
+}
+
+.benefits-item > span::after{
+    content: "+";
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+
+    vertical-align: top;
+
+
+    color: #FF6C00;
+
+}
+
+.benefits-item span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57/42);
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: var(--second-title-color);
+}
+.benefits-item-text {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 6px;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+    text-align: center;
+
+    color: var(--second-title-color);
+}
+.benefits-pre-title {
+    margin-top: 9px;
+    margin-bottom: 20px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: calc(15/11);
+
+    text-transform: uppercase;
+
+    color: var(--second-title-color);    
+    
+
+}
+.benefits-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: calc(49/42);
+    letter-spacing: 0.05em;
+
+    color:var(--second-title-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+    }
+}
+.benefits-after-title {
+    margin-top: 20px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30/18);
+    letter-spacing: 0.02em;
+
+    color: var(--third-title-color);
+}
