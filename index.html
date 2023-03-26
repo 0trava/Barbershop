@@ -61,16 +61,16 @@
                 <a class="header-contacts_tel" href="tel:+380441111111">+38 044 111 11 11</a>
                 <button class="button header-contacts_btn" type="button" data-modal-open>Online-booking</button>
             </div>
-            <button type="button" class="header-menu-btn menu-open">
+            <button type="button" class="header-menu-btn menu-open" data-mob-open>
                 <img src="./images/svg/menu_40px.svg" alt="menu button">
         </button>
        </div>
 
 
-        <div class="mob-menu">
-            <button class="header-menu-btn-close menu-close" type="button">            
+        <div class="mob-menu is-hidden" data-modal-mob>
+            <button class="header-menu-btn-close menu-close" type="button" data-mob-close>            
                 <svg class="modal-close-icon">
-                <use href="./images/svg/menu-close_40px.svg" width="40px" height="40px"></use>
+                <use href="./images/svg/svg_icon.svg#cancel-circle" width="30px" height="30px"></use>
             </svg></button>
             <ul class="mob-menu-list">
                 <li class="mob-menu-item"><a href="./index.html">About</a></li>
@@ -90,8 +90,11 @@
                     <use href="./images/svg/svg_icon.svg#footer-line" width="60px" hight="1px"></use>
                     </svg>
                 </span> 
-                <li class="footer-item"><a class="footer-link" href="" target ="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
-                <li class="footer-item"><a class="footer-link" href="" target ="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+                <div class="mob-menu-soc_blok">
+                    <li class="footer-item"><a class="mob-menu-soc-link" href="" target ="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
+                    <li class="footer-item"><a class="mob-menu-soc-link" href="" target ="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
+                </div>
+
             </ul>
             
         </div>
@@ -737,5 +740,6 @@
 
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu-mob.js"></script>
 </body>
 </html>
