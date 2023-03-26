@@ -357,6 +357,20 @@ address {
   }
 }
 
+.hero-text-box {
+  max-width: 448px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-text-box {
+    width: auto;
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
 .hero-slider {
   background-color: var(--second-title-color);
   background-image: linear-gradient(var(--background-gradient)), url(../../images/hero_mob_2x.jpg);
@@ -478,11 +492,13 @@ address {
     margin-left: 98px;
     font-size: 18px;
     line-height: 1.6666666667;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-after-title {
     margin-left: 100px;
+    width: 100%;
   }
 }
 

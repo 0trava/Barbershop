@@ -37,6 +37,21 @@
     }
 }
 
+.hero-text-box{
+    max-width: 448px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+    width: auto;
+    padding: 0;
+    margin-left: 0;
+
+    }
+
+}
+
 
 
 .hero-slider{
@@ -177,10 +192,12 @@
         margin-left: 98px;
         font-size: 18px;
         line-height: calc(30/18);
+        width: 100%;
     }
 
     @media screen and (min-width: 1200px) {
         margin-left: 100px;
+        width: 100%;
 
     }
 
